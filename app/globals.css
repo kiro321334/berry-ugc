@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nav-h: 72px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
+  background: #f5ede3;
+}
+
+/* الـ Hero = ارتفاع الشاشة ناقص الـ nav */
+.hero-h {
+  height: calc(100vh - var(--nav-h));
+  height: calc(100svh - var(--nav-h));
+  min-height: 480px;
+}
+
+/* padding جانبي: 1rem موبايل، ومحتوى متوسّط بحد أقصى 72rem على الشاشات الكبيرة */
+.px-page {
+  padding-inline: max(1rem, calc((100% - 72rem) / 2));
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+body {
+  background: #f5ede3;
+  color: #2a1d14;
+  -webkit-font-smoothing: antialiased;
+}
+:focus-visible {
+  outline: 2px solid #ad3306;
+  outline-offset: 3px;
+}
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
