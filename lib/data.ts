@@ -4,7 +4,52 @@ export const NAV = [
   { id: "pricing", label: "الأسعار", icon: "tag" },
   { id: "contact", label: "تواصل", icon: "chat" },
 ] as const;
+// غيّر العملة حسب اللي العميل قصده
+export const CURRENCY = "جنيه";
 
+export const PRICING = [
+  {
+    id: "video",
+    featured: true,
+    badge: "الأكثر طلباً",
+    title: "فيديو UGC",
+    from: "300",
+    to: "500",
+    note: "حسب مدة الفيديو وتعقيد الفكرة",
+    items: [
+      "سكريبت وهوك مخصص لمنتجك",
+      "تصوير واقعي بجودة 4K رأسي 9:16",
+      "مونتاج كامل مع نصوص (Captions)",
+      "تسليم سريع وتعديلات على الفيديو",
+    ],
+    cta: "اطلب فيديو",
+  },
+  {
+    id: "photos",
+    featured: false,
+    title: "صور المنتج",
+    from: "200",
+    note: "للصورة الواحدة",
+    items: [
+      "صور احترافية بإضاءة مناسبة للمنتج",
+      "تنسيق وزوايا تناسب الإعلانات والسوشيال",
+      "تسليم جاهز للاستخدام",
+    ],
+    cta: "اطلب صور",
+  },
+  {
+    id: "startup",
+    featured: false,
+    title: "البراندات الناشئة",
+    custom: "سعر خاص",
+    note: "عروض مخصصة تناسب ميزانية البراندات في بدايتها",
+    items: [
+      "باقة مرنة حسب احتياج البراند",
+      "نبدأ بمحتوى أساسي ونتوسع مع نمو البراند",
+    ],
+    cta: "اطلب عرض سعر",
+  },
+] as const;
 export const WORKS = [
   {
     img: "skincare",
@@ -59,7 +104,7 @@ export const WORKS = [
 export const RESULTS = [
   {
     icon: "eye",
-    num: "+5",
+    num: "+1",
     unit: " مليون",
     label: "مشاهدة أورجانيك وممولة",
     ghost: "trend",
