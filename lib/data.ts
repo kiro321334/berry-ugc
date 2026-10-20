@@ -104,21 +104,21 @@ export const WORKS = [
 export const RESULTS = [
   {
     icon: "eye",
-    num: "+1",
-    unit: " مليون",
+    num: "+200",
+    unit: " الف",
     label: "مشاهدة أورجانيك وممولة",
     ghost: "trend",
   },
   {
     icon: "video",
-    num: "+40",
+    num: "+30",
     unit: "",
     label: "فيديو UGC تم تسليمهم بنجاح",
     ghost: "check",
   },
   {
     icon: "store",
-    num: "+20",
+    num: "+10",
     unit: "",
     label: "براند في مصر ودول الخليج",
     ghost: "globe",
